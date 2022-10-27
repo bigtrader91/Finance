@@ -18,7 +18,7 @@ rc('font', family=font_name)
 일년전 = (datetime.datetime.now() - datetime.timedelta(weeks=52)).strftime('%Y%m%d')
 오늘=datetime.datetime.now().strftime('%Y%m%d')
 
-base_dir='''C:/Users/PC_1M/Documents/code/tistory_auto_posting/data'''
+base_dir=
 개별주_dir=base_dir+"/개별주"
 코스피=get_stocks(market='kospi')
 코스닥=get_stocks(market='kosdaq')
@@ -55,8 +55,8 @@ class Stock_report:
         else:
             시작일=datetime.datetime.strptime('2016-01-01', '%Y-%m-%d').strftime('%Y-%m-%d')
         종료일=datetime.datetime.now().strftime('%Y-%m-%d')
-        client_id = "D1_NLYx2BApXPF9Dhvns"
-        client_secret = "EU9WJ1BrDn"
+        client_id = 
+        client_secret =
         url = "https://openapi.naver.com/v1/datalab/search";
         body = "{\"startDate\":\""+시작일+"\",\"endDate\":\""+종료일+"\",\"timeUnit\":\"date\",\"keywordGroups\":[{\"groupName\":\""+키워드+"\",\"keywords\":[\""+키워드+"\"]}]}";
         request = urllib.request.Request(url)
